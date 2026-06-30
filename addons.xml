@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+    <addon id="plugin.video.miaddon" name="Mi Addon de Peliculas" version="1.2.0" provider-name="TuNombre">
+        <requires>
+            <import addon="xbmc.python" version="3.0.1"/>
+            <import addon="script.module.requests" version="2.22.0"/>
+            <import addon="script.module.urllib3" version="1.26.0"/>
+            <import addon="script.module.beautifulsoup4" version="4.9.3"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="main.py">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="es">Addon de video con web scraping</summary>
+            <description lang="es">Plugin de video para Kodi con soporte de scraping y Cloudflare bypass.</description>
+            <platform>all</platform>
+            <license>MIT</license>
+            <language>es</language>
+            <news>v1.2.0 - Categorias dinamicas desde el sitio. Correccion de URLs en subdominio ES.</news>
+        </extension>
+    </addon>
+</addons>
